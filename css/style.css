@@ -173,12 +173,13 @@ img {
 /*-----*/
 .p2text
 {
-  padding: 5%;
+  padding: 2%;
   text-align: center;
 }
 .textdiv
 {
   height: 500px;
+  padding: 20%;
 }
 @media (min-width: 768px) {
   p {
