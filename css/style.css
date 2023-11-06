@@ -129,8 +129,7 @@ img {
   }
   .navbar {
     position: absolute;
-    top: 100%;
-    right: -100%;
+    top: -300%;
     width: 270px;
     height: auto;
     background: var(--main-color);
@@ -154,7 +153,8 @@ img {
     color: var(--text-color);
   }
   .navbar.open {
-    right: 2%;
+    top: 100%;
+    right: 0%;
   }
 }
 /*-----*/
