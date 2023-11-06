@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-
+        
         <?php
         session_start();
         if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
@@ -25,30 +25,31 @@
     <body>      
       
       <header>
-        <a href="index.html" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+        <a href="index.html" class="logo"><img src="imagem/icon.png"><span>Sem Fronteiras</span></a>
         <ul class="navbar">
           <li><a href="transporte.html">Transportes</a></li>
           <li><a href="restaurantes.html">Restaurantes</a></li>
           <li><a href="hospedagem.html">Hospedagens</a></li>
+          <li><a href="educacional.html">Educacional</a></li>
+          <li><a href="dicas.html">Dicas</a></li>
+          <li><a href="descontos.html">Descontos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
         </ul>
         <div class="main">
-          <?php
-            echo"<div id='logado'><p>".$logado."</p></div>";
-          ?>
           <div class="bx bx-menu" id="menu-icon"></div>
         </div>
       </header>
       <!--js link-->
       <script type="text/javascript" src="js/script.js"></script>
       <div class="carvalho">
-        <p class="objeto">Bem-vindo ao nosso guia de restaurantes acessíveis no Brasil! Nesta página, você 
-          encontrará uma seleção de restaurantes que têm se destacado por sua dedicação à 
-          acessibilidade. Nosso mapa interativo foi projetado para tornar a sua experiência 
-          gastronômica mais fácil e inclusiva. Aqui, você pode explorar locais que levam a sério a 
-          missão de tornar a refeição uma experiência acessível e agradável para todos.</p>
+        <p class="objeto">Bem-vindo à nossa ferramenta de transporte acessível no Brasil! Nesta página, você 
+        encontrará informações valiosas sobre aeroportos, rodoviárias e metrôs que estão 
+        comprometidos em tornar suas instalações e serviços acessíveis a todos os viajantes. Aqui,
+        você pode explorar locais que levam a sério a missão de tornar o transporte uma 
+        experiência acessível e agradável para todos.</p>
         </div>
-      <div class="mapa">
-        <iframe src="https://www.google.com/maps/d/embed?mid=17EzAQrfeoxNzYZXnViqh7KMZNYy5L4k&ehbc=2E312F&noprof=1" width="640" height="600"></iframe>
-      </div>
-      </body>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/d/embed?mid=17UNuS9v3h1E2FVHzxnmyY9fhLCTkzeE&ehbc=2E312F&noprof=1" width="640" height="600"></iframe>
+        </div>
+    </body>
 </html>
