@@ -23,6 +23,24 @@
        |||||||\__[____]__/||||||<br>
        |_____/-------\_____|<br>
   OPTIMUS PRIME
+
+CREATE TABLE usuarios (
+	cd_id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nm_nome_usuario VARCHAR(50),
+    nm_email_usuario VARCHAR(50),
+    cd_senha_usuario VARCHAR(20),
+    ds_genero_usuario VARCHAR (10),
+    ds_usuario_pcd VARCHAR(50)
+);
+
+database:
+id21510259_tccsemfronteiras
+Senha: Tcc@12345
+  email
+  tccsemfronteiras  
+  senha
+  Tcc@12345
+
       <div class="carvalho">
         <p tag="titlu">Bem-vindo ao nosso guia de hotéis acessíveis no Brasil!.</p><br>
       </div>
@@ -56,3 +74,346 @@
           <input class="btnc" type="submit" name="salvar">
           <input  class="btnc2" type="reset" name="limpar" value="Limpar">
         </form>
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root{
+  --main-color: white;
+}
+body
+{
+  min-height: 100vh;
+  background-color: azure;
+  color: var(--text-color);
+}
+header{
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFDF2B;
+  padding: 10px 12%;
+  transition: all .50s ease;
+}
+.logo
+{
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 60px;
+  padding: 8px;
+}
+.logo i
+{
+  font-size: 28px;
+  margin-right: 3px;
+}
+.logo span 
+{
+  color: #7BB3B9;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar
+{
+  display: flex;
+}
+.navbar a
+{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+.navbar a:hover
+{
+  text-decoration: underline;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.navbar a.active
+{
+  color: var(--main-color);
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a
+{
+  margin-right: 25px;
+  margin-left: 10px;
+  color: #7BB3B9;;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+.main a:hover{
+  text-decoration: underline;
+  color: var(--main-color);
+  
+}
+
+@media (max-width: 1280px) 
+{
+  header {
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;    
+  }
+}
+@media (max-width: 1090px) 
+{
+  .logo span 
+  {
+    color: #7BB3B9;;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .main a
+ {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #7BB3B9;;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+ }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: -600%;
+    width: 270px;
+    height: auto;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding:  0px 25px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+    transform: translateY(10px);
+  }
+  .navbar a.active {
+    color: var(--text-color);
+  }
+  .navbar.open {
+    top: 100%;
+    right: 0%;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px)
+{
+   .carvalho, .objeto
+  {
+    float: right;
+    width: 30%;
+  }
+}
+.objeto
+{
+
+}
+.mapa
+{
+
+}
+
+    <footer>
+      <section class="blog">
+        <article class="post">
+          <img
+            class="post-image"
+            src="imagem/background2.png"
+            alt="woman in white dress shirt sitting on chair near window during daytime"/>
+        </article>
+        <!-- ... mais <article>s ... -->
+      </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <main class="apresentacao__experiencia">
+        <section class="apresentacao__experiencia__conteudo">
+          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1cW3o_49CixhIDbWKBcSTo81fExIJkCM&ehbc=2E312F"></iframe>
+        </section>
+
+        <section class="apresentacao__experiencia__conteudo">
+          <p> Bem-vindo ao nosso guia de hotéis acessíveis no Brasil! Nesta página, você encontrará informações 
+            detalhadas sobre hotéis que priorizam a acessibilidade e se dedicam a tornar a sua estadia confortável e 
+            inclusiva. Nosso mapa interativo foi projetado para tornar a sua hospedagem uma experiência verdadeiramente 
+            agradável e acessível para todos os viajantes.</p><br><br>
+            <h3>Legendas</h3><br>
+          <p>Hotel</p><br>
+          <p>pousada</p><br>
+        </section>
+    </main>
+
+
+[---------------------------------------------------------------]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Body</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container">
+    <div class="coluna">
+      <h1>Coluna 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin metus erat, in congue purus pretium eget.</p>
+    </div>
+    <div class="coluna">
+      <h1>Coluna 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin metus erat, in congue purus pretium eget.</p>
+    </div>
+ </div>
+</body>
+</html>
+
+
+body {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.coluna {
+ flex: 1 0 100%;
+ padding: 10px;
+}
+
+@media (min-width: 768px) {
+ .coluna {
+    flex: 1 0 50%;
+ }
+}
+
+<body onload="resizeIframe()">
+ <iframe id="myIframe" src="https://www.example.com" style="position: absolute;"></iframe>
+</body>
+
+function resizeIframe() {
+ var iframe = document.getElementById('myIframe');
+ iframe.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+ iframe.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+}
+
+<body onload="resizeIframe()" onresize="resizeIframe()">
+ <iframe id="myIframe" src="https://www.example.com" style="position: absolute;"></iframe>
+</body>
+
+[--------------------------------------------------------------------------------]
+EXEMPLO DO MIDIA
+#teste
+{
+  background-color: #fff;
+  color:#fe1818;
+}
+
+@media (max-width: 768px)
+{
+    #teste
+    {
+      background-color: #000;
+      color: #fff;
+    }
+}
+@media (min-width:769px) and (max-width:1024px)
+{
+  #teste
+  {
+    background-color: #bc0000;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+Transporte
+
+
+          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1JdFqoB-OS2TVp05ZhVCfyVAUEeoJGQ0&ehbc=2E312F"></iframe>
+
+          <p>Bem-vindo ao nosso guia de restaurantes acessíveis no Brasil! Nesta página, você 
+          encontrará uma seleção de restaurantes que têm se destacado por sua dedicação à 
+          acessibilidade. Nosso mapa interativo foi projetado para tornar a sua experiência 
+          gastronômica mais fácil e inclusiva. Aqui, você pode explorar locais que levam a sério a 
+          missão de tornar a refeição uma experiência acessível e agradável para todos.</p><br>
+          <h3>Legendas</h3><br>
+          <p>Restaurantes</p><br>
+
+hospedagem
+
+
+          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1cW3o_49CixhIDbWKBcSTo81fExIJkCM&ehbc=2E312F"></iframe>
+
+          <p> Bem-vindo ao nosso guia de hotéis acessíveis no Brasil! Nesta página, você encontrará informações 
+            detalhadas sobre hotéis que priorizam a acessibilidade e se dedicam a tornar a sua estadia confortável e 
+            inclusiva. Nosso mapa interativo foi projetado para tornar a sua hospedagem uma experiência verdadeiramente 
+            agradável e acessível para todos os viajantes.</p><br><br>
+            <h3>Legendas</h3><br>
+          <p>Hotel</p><br>
+          <p>pousada</p><br>
+
+
+
+
+
+

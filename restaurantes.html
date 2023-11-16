@@ -12,23 +12,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-
-        <?php
-        session_start();
-        if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-        {
-            header('location:login.html');
-        }
-        $logado = $_SESSION['email'];
-      ?>
     </head> 
     <body>      
       
       <header>
-      <a href="index.html" class="logo"><img src="imagem/icon.png"><span>Sem Fronteiras</span></a>
+        <a href="index.html" class="logo"><img class="imgheader" src="imagem/icon.png"><span>SemFronteiras</span></a>
         <ul class="navbar">
           <li><a href="transporte.html">Transportes</a></li>
-          <li><a href="restaurantes.html">Restaurantes</a></li>
+          <li><a class="active" href="restaurantes.html">Restaurantes</a></li>
           <li><a href="hospedagem.html">Hospedagens</a></li>
           <li><a href="educacional.html">Educacional</a></li>
           <li><a href="dicas.html">Dicas</a></li>
@@ -38,18 +29,40 @@
         <div class="main">
           <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-      </header>
+      </header><br><br>
       <!--js link-->
       <script type="text/javascript" src="js/script.js"></script>
-      <div class="carvalho">
-        <p class="objeto">Bem-vindo ao nosso guia de restaurantes acessíveis no Brasil! Nesta página, você 
-          encontrará uma seleção de restaurantes que têm se destacado por sua dedicação à 
-          acessibilidade. Nosso mapa interativo foi projetado para tornar a sua experiência 
-          gastronômica mais fácil e inclusiva. Aqui, você pode explorar locais que levam a sério a 
-          missão de tornar a refeição uma experiência acessível e agradável para todos.</p>
-        </div>
-      <div class="mapa">
-        <iframe src="https://www.google.com/maps/d/embed?mid=17EzAQrfeoxNzYZXnViqh7KMZNYy5L4k&ehbc=2E312F&noprof=1" width="640" height="600"></iframe>
+      <center><h1 id="tituloh1">Bem vindo ao nosso guia de Restaurantes acessives no Brasil!</h1><br></center>
+      <center><iframe class="iframemap" src="https://www.google.com/maps/d/u/1/embed?mid=1JdFqoB-OS2TVp05ZhVCfyVAUEeoJGQ0&ehbc=2E312F"></iframe></center>
+      <main class="apresentacao__experiencia">
+      <section class="apresentacao__experiencia__conteudo">
+        <div class="bordertexto">
+          <p>Bem-vindo ao nosso guia de restaurantes acessíveis no Brasil! Nesta página, você 
+            encontrará uma seleção de restaurantes que têm se destacado por sua dedicação à 
+            acessibilidade. Nosso mapa interativo foi projetado para tornar a sua experiência 
+            gastronômica mais fácil e inclusiva. Aqui, você pode explorar locais que levam a sério a 
+            missão de tornar a refeição uma experiência acessível e agradável para todos.</p><br>
+            <h3>Legendas</h3><br>
+            <p>Restaurantes</p><br>
+            </div>
+        </section>
+    </main>
+      
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div> 
       </div>
-      </body>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget({
+          rootPah: '/app',
+          personalization: 'https://vlibras.gov.br/config/default_logo.json',
+          opacity: 0.5,
+          position: 'R',
+          avatar: 'random',
+      });
+    </script>
+    </body>
 </html>

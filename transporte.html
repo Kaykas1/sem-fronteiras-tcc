@@ -12,22 +12,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-        
-        <?php
-        session_start();
-        if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-        {
-            header('location:login.html');
-        }
-        $logado = $_SESSION['email'];
-      ?>
     </head> 
     <body>      
       
       <header>
-        <a href="index.html" class="logo"><img src="imagem/icon.png"><span>Sem Fronteiras</span></a>
+        <a href="index.html" class="logo"><img class="imgheader" src="imagem/icon.png"><span>SemFronteiras</span></a>
         <ul class="navbar">
-          <li><a href="transporte.html">Transportes</a></li>
+          <li><a class="active" href="transporte.html">Transportes</a></li>
           <li><a href="restaurantes.html">Restaurantes</a></li>
           <li><a href="hospedagem.html">Hospedagens</a></li>
           <li><a href="educacional.html">Educacional</a></li>
@@ -38,18 +29,48 @@
         <div class="main">
           <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-      </header>
+      </header><br><br>
       <!--js link-->
       <script type="text/javascript" src="js/script.js"></script>
-      <div class="carvalho">
-        <p class="objeto">Bem-vindo à nossa ferramenta de transporte acessível no Brasil! Nesta página, você 
-        encontrará informações valiosas sobre aeroportos, rodoviárias e metrôs que estão 
-        comprometidos em tornar suas instalações e serviços acessíveis a todos os viajantes. Aqui,
-        você pode explorar locais que levam a sério a missão de tornar o transporte uma 
-        experiência acessível e agradável para todos.</p>
-        </div>
-        <div class="mapa">
-          <iframe src="https://www.google.com/maps/d/embed?mid=17UNuS9v3h1E2FVHzxnmyY9fhLCTkzeE&ehbc=2E312F&noprof=1" width="640" height="600"></iframe>
-        </div>
+      <center><h1 id="tituloh1">Bem vindo ao nosso guia de Transportes acessives no Brasil!</h1><br></center>
+      <center><iframe class="iframemap" src="https://www.google.com/maps/d/u/1/embed?mid=1bWhs9GrhCvY2pQwNIkbBuea5pLq02mU&ehbc=2E312F"></iframe></center>
+      <main class="apresentacao__experiencia">
+      <section class="apresentacao__experiencia__conteudo">
+        <div class="bordertexto">
+          <p>Bem-vindo à nossa ferramenta de transporte acessível no Brasil! Oferecemos informações sobre aeroportos, 
+            rodoviárias e metrôs comprometidos em proporcionar uma experiência de transporte acessível e agradável para todos os viajantes.</p><br>
+
+             <h3>Legendas:</h3><br>
+             <div class="container">
+              <div id="lege"><div id="vermelho">‎</div><p id="plegenda">- Minima</p></div>            
+              <div id="term"><img id="icon" src="imagem/Terminais Ícone.png">Terminais</div>
+              <div id="lege">
+                <div id="amarelo">‎</div>Acessibilidade Parcial
+              </div>
+              <div id="term"><img id="icon" src="imagem/Aeroporto Ícone.png">Aeroportos</div>
+              <div id="lege"><div id="verde">‎</div>Acessibilidade Total</div>
+                        
+            </div>
+            </div>
+
+        </section>
+    </main>
+      
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div> 
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget({
+          rootPah: '/app',
+          personalization: 'https://vlibras.gov.br/config/default_logo.json',
+          opacity: 0.5,
+          position: 'R',
+          avatar: 'random',
+      });
+    </script>
     </body>
 </html>
